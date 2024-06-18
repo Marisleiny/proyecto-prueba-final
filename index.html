@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La manera más efectiva de hacerlo es hacerlo.</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
+</head>
+<body>
+
+    <header class="header"></header>
+
+    <!-- Banner principal de inicio -->
+    <section class="banner">
+        <picture>
+            <source srcset="media/webp/banner-1.webp" type="image/webp">
+            <img class="banner__img" src="media/banner-1.jpg" alt="">
+        </picture>
+        <h1>Centro deportivo FitForFun</h1>
+        <p>FitForFun está dedicado a promover y facilitar la práctica de actividades deportivas acuáticas y en sala</p>
+    </section>
+
+    <!-- Carrusel de cards de los packs de ejercicios -->
+    <section class="carrusel">
+        <h2 class="carrusel__titulo">Actividades deportivas</h2>
+        <div class="carrusel__container">
+            <div class="carrusel__container__content">
+                <picture>
+                    <source srcset="media/webp/aquacross-1.webp" type="image/webp">
+                    <img class="carrusel__container__content__img" loading="lazy" src="media/aquacross-1.webp" alt="Imagen que muestra ejercicios del entrenamiento de aquacross">
+                </picture>
+                <h3>Aquacross</h3>
+                <div class="carrusel__container__content__info">
+                    <span>40 minutos</span>
+                    <span>Intensidad: Media-Alta</span>
+                </div>
+                <div class="carrusel__container__content__info">
+                    <span>$ 50</span>
+                    <button class="carrusel__container__content__info__button btn">Ver</button>
+                </div>
+            </div>
+            <div class="carrusel__container__content">
+                <picture>
+                    <source srcset="media/webp/aquadance-1.webp" type="image/webp">
+                    <img class="carrusel__container__content__img" loading="lazy" src="media/aquadance-1.jpg" alt="Imagen que muestra ejercicios del entrenamiento de aquadance">
+                </picture>
+                <h3>Aquadance</h3>
+                <div class="carrusel__container__content__info">
+                    <span>45-60 minutos</span>
+                    <span>Intensidad: Media-Alta</span>
+                </div>
+                <div class="carrusel__container__content__info">
+                    <span>$ 40</span>
+                    <button class="carrusel__container__content__info__button btn">Ver</button>
+                </div>
+            </div>
+            <div class="carrusel__container__content">
+                <picture>
+                    <source srcset="media/webp/natacion-1.webp" type="image/webp">
+                    <img class="carrusel__container__content__img" loading="lazy" src="media/natacion-1.jpg" alt="Imagen que muestra ejercicios del entrenamiento de natación">
+                </picture>
+                <h3>Natación</h3>
+                <div class="carrusel__container__content__info">
+                    <span>60 minutos</span>
+                    <span>Intensidad: Media</span>
+                </div>
+                <div class="carrusel__container__content__info">
+                    <span>$ 50</span>
+                    <button class="carrusel__container__content__info__button btn">Ver</button>
+                </div>
+            </div>
+            <div class="carrusel__container__content">
+                <picture>
+                    <source srcset="media/webp/fitcross-1.webp" type="image/webp">
+                    <img class="carrusel__container__content__img" loading="lazy" src="media/fitcross-1.jpg" alt="Imagen que muestra ejercicios del entrenamiento de fitcross">
+                </picture>
+                <h3>Fitcross</h3>
+                <div class="carrusel__container__content__info">
+                    <span>45 minutos</span>
+                    <span>Intensidad: Alta</span>
+                </div>
+                <div class="carrusel__container__content__info">
+                    <span>$ 55</span>
+                    <button class="carrusel__container__content__info__button btn">Ver</button>
+                </div>
+            </div>
+            <div class="carrusel__container__content">
+                <picture>
+                    <source srcset="media/webp/yoga-1.webp" type="image/webp">
+                    <img class="carrusel__container__content__img" loading="lazy" src="media/yoga-1.jpg" alt="Imagen que muestra ejercicios del entrenamiento de yoga">
+                </picture>
+                <h3>Yoga</h3>
+                <div class="carrusel__container__content__info">
+                    <span>60 minutos</span>
+                    <span>Intensidad: Baja</span>
+                </div>
+                <div class="carrusel__container__content__info">
+                    <span>$ 40</span>
+                    <button class="carrusel__container__content__info__button btn">Ver</button>
+                </div>
+            </div>
+            <div class="carrusel__container__content">
+                <picture>
+                    <source srcset="media/webp/zumba-1.webp" type="image/webp">
+                    <img class="carrusel__container__content__img" loading="lazy" src="media/zumba-1.jpg" alt="Imagen que muestra ejercicios del entrenamiento de zumba">
+                </picture>
+                <h3>Zumba</h3>
+                <div class="carrusel__container__content__info">
+                    <span>60 minutos</span>
+                    <span>Intensidad: Media</span>
+                </div>
+                <div class="carrusel__container__content__info">
+                    <span>$ 40</span>
+                    <button class="carrusel__container__content__info__button btn">Ver</button>
+                </div>
+            </div>
+        </div>
+        <div class="carrusel__boton">
+            <button class="carrusel__container__prev button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 21a9 9 0 1 0 0 -18a9 9 0 0 0 0 18" />
+                    <path d="M8 12l4 4" />
+                    <path d="M8 12h8" />
+                    <path d="M12 8l-4 4" />
+                </svg>
+            </button>
+            <button class="carrusel__container__next button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
+                    <path d="M16 12l-4 -4" />
+                    <path d="M16 12h-8" />
+                    <path d="M12 16l4 -4" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección mostrando los valores del centro deportivo, imagen y contenedor -->
+    <section class="valores">
+        <div class="valores__picture">
+            <picture>
+                <source srcset="media/webp/banner-valores.webp" type="image/webp">
+                <img class="valores__picture__img" loading="lazy" src="media/banner-valores.jpg" alt="Vista panorámica del centro deportivo">
+            </picture>
+        </div>
+        <div class="valores__container">
+            <div class="valores__container__content">
+                <div class="valores__container__content__info primero">
+                    <span class="valores__container__content__info__text">Compromiso</span>
+                    <span class="valores__container__content__info__text">95%</span>
+                </div>
+            </div>
+            <div class="valores__container__content">
+                <div class="valores__container__content__info segundo">
+                    <span class="valores__container__content__info__text">Disciplina</span>
+                    <span class="valores__container__content__info__text">100%</span>
+                </div>
+            </div>
+            <div class="valores__container__content">
+                <div class="valores__container__content__info tercero">
+                    <span class="valores__container__content__info__text">Motivación</span>
+                    <span class="valores__container__content__info__text">95%</span>
+                </div>
+            </div>
+            <div class="valores__container__content">
+                <div class="valores__container__content__info cuarto">
+                    <span class="valores__container__content__info__text">Entrenamientos</span>
+                    <span class="valores__container__content__info__text">90%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay hidden">
+        <nav class="overlay__menu">
+            <ul class="overlay__menu__ul">
+                <li class="overlay__menu__ul__li"><a href="../index.html" class="menu__li__a">Inicio</a></li>
+                <li class="overlay__menu__ul__li"><a href="../actividades-acuaticas.html" class="menu__li__a">Actividades acuáticas</a></li>
+                <li class="overlay__menu__ul__li"><a href="../actividades-sala.html" class="menu__li__a">Actividades en sala</a></li>
+                <li class="overlay__menu__ul__li"><a href="../sobre-nosotros.html" class="menu__li__a">Sobre nostros</a></li>
+                <li class="overlay__menu__ul__li"><a href="../contacto.html" class="menu__li__a">Contacto</a></li>
+            </ul>
+        </nav>
+        <button class="overlay__button">X</button>
+    </div>
+
+
+    <footer class="footer"></footer>
+    
+</body>
+</html>

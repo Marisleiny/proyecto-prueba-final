@@ -1,0 +1,641 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none;
+}
+
+/* Header */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 100px;
+    min-width: 100px;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+}
+
+.menu__li:hover {
+    border-bottom: solid 2px rgba(110, 193, 228, 1);
+}
+
+.icons {
+    display: flex;
+    gap: 1em;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+@media (min-width: 240px) and (max-width: 720px) {
+    .menu {
+        display: none;
+    }
+    .icons {
+        display: none;
+    }
+    .hamburguesa {
+        display: flex;
+    }
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.3em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    width: 100px;
+    min-width: 100px;
+
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.footer__newsletter__form {
+    display: flex;
+    gap: 0px;
+}
+
+.footer__newsletter__form__input {
+    padding: 0.5em;
+    border: solid 1px rgba(110, 193, 228, 1);
+    border-radius: 10px 0px 0px 0px;
+}
+
+.footer__newsletter__form__submit {
+    padding: 0.5em;
+    border: solid 1px rgba(110, 193, 228, 1);
+    border-radius: 0px 0px 10px 0px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.footer__newsletter__form__submit:hover {
+    background-color: rgba(110, 193, 228, 1);
+}
+
+.footer__contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.footer__nav__ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+/* Inicio */
+/* Banner principal */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* Carrusel de packs de ejercicios */
+.carrusel {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+
+    overflow: hidden;
+    position: relative;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.carrusel__titulo {
+    width: 100%;
+    text-align: center;
+}
+
+.carrusel__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    gap: 1.5em;
+
+    transition: transform 2s;
+}
+
+.carrusel__boton {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1em;
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+}
+
+.carrusel__container__content {
+    width: 30vw;
+    min-width: 200px;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: auto;
+}
+
+.carrusel__container__content__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+/* Botón de las cards del carrusel de Inicio */
+.btn {
+    background-color: #FFFFFF;
+    border: solid 1px rgba(110, 193, 228, 1);
+    border-radius: 20px;
+    padding: 0.8em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(110, 193, 228, 1);
+}
+
+/* Botones para avanzar o retroceder en el carrusel */
+.button {
+    border: none;
+    background-color: transparent;
+    stroke: #000000;
+    cursor: pointer;
+}
+
+/* Banner de valores del centro deportivo */
+.valores {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1em;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.valores__picture {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    min-width: 250px;
+}
+
+.valores__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.valores__container__content {
+    width: 100%;
+    background-color: rgba(169, 169, 169, 0.822);
+}
+
+.valores__container__content__info {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    color: #FFFFFF;
+
+    padding: 0.5em;
+}
+
+@keyframes primero {
+    0% {background-color: #000000; width: 0%;}
+    100% {background-color: #000000; width: 95%;}
+}
+
+@keyframes segundo {
+    0% {background-color: #000000; width: 0%;}
+    100% {background-color: #000000; width: 100%;}
+}
+
+@keyframes cuarto {
+    0% {background-color: #000000; width: 0%;}
+    100% {background-color: #000000; width: 90%;}
+}
+
+.primero {
+    animation-name: primero;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+.segundo {
+    animation-name: segundo;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+.tercero {
+    animation-name: primero;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+.cuarto {
+    animation-name: cuarto;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+}
+
+/* actividades-acuaticas */
+/* Banner */
+.banneracuaticas {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Packs de actividades acuaticas */
+.packsacuaticas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    gap: 1em;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.packsacuaticas__container__content {
+    width: 30vw;
+    min-width: 200px;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: auto;
+
+    padding: 0.5em;
+
+    background-color: rgba(110, 193, 228, 0.85);
+}
+
+.packsacuaticas__container__content__info {
+    display: flex;
+    justify-content: space-between;
+    gap: auto;
+    
+    width: 100%;
+}
+
+.aquacross {
+    background-image: url("../media/aquacross-1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aquadance {
+    background-image: url("../media/aquadance-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.natacion {
+    background-image: url("../media/natacion-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Botón de las cards de los packs de ejercicios dentro de cada página de actividades tanto acuáticas como en sala */
+.boton {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.5em;
+    text-transform: uppercase;
+    animation-name: boton;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boton {
+    from {border-left: 2px solid rgb(197, 2, 223);}
+    to {border-right: 2px solid rgb(197, 2, 223); color: rgb(197, 2, 223);}
+}
+
+/* actividades en sala */
+/* Banner principal */
+.bannersala {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Packs de actividades en sala */
+.packssala {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    flex-grow: 1;
+    gap: 1em;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.packssala__container__content {
+    width: 30vw;
+    min-width: 200px;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: auto;
+
+    padding: 0.5em;
+
+    background-color: rgba(110, 193, 228, 0.85);
+}
+
+.packssala__container__content__info {
+    display: flex;
+    justify-content: space-between;
+    gap: auto;
+    
+    width: 100%;
+}
+
+.fitcross {
+    background-image: url("../media/fitcross-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yoga {
+    background-image: url("../media/yoga-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.zumba {
+    background-image: url("../media/zumba-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contacto */
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    flex-basis: 0;
+    flex-grow: 1;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.contacto__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contacto__container__formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contacto__container__formulario__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid;
+}
+
+/* Sobre nosotros */
+/* Banner principal */
+.aboutus {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    background: linear-gradient(to right, rgb(54, 136, 172), rgb(235, 243, 247));
+    width: 100%;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.aboutus__img {
+    flex-basis: 0;
+    flex-grow: 1;
+
+    min-width: 200px;
+}
+
+.aboutus__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-basis: 0;
+    flex-grow: 1;
+
+    text-align: center;
+}
+
+/* Seccion de beneficios del deporte */
+.beneficios {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    
+
+    background: linear-gradient(to right, rgb(54, 136, 172), rgb(235, 243, 247));
+    width: 100%;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.beneficios__animacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 0;
+    flex-grow: 1;
+
+    padding: 2em;
+
+    box-shadow: inset 5px 5px 5px 0px rgba(0, 0, 0, 0.39), inset -5px -5px 5px 0px rgba(255, 255, 255, 0.342);
+    border-radius: 10px;
+}
+
+.beneficios__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    flex-basis: 0;
+    flex-grow: 1;
+
+    min-width: 200px;
+}
+
+/* Menu hamburguesa */
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+
+    padding: 4em;
+}
+
+.overlay__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    width: 60vw;
+    height: 70vh;
+    background-color: rgba(110, 193, 228, 1);
+}
+
+.overlay__menu__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.overlay__button {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.39);
+
+    color: black;
+    position: absolute;
+    top: 0;
+}
+
+.hidden {
+    display: none;
+}
+

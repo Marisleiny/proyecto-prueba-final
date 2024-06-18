@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La manera más efectiva de hacerlo es hacerlo.</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>i
+</head>
+<body>
+
+    <header class="header"></header>
+
+    <!-- Formulario de contacto -->
+    <section class="contacto">
+        <div class="contacto__container">
+            <h1 class="contanto__container__titulo">Contacto</h1>
+            <p>Dirección: Calle Oriente #E-2, Cifuentes, Villa Clara, Cuba</p>
+            <p>Teléfono: +53 58502879</p>
+            <p>Correo electrónico: marisleinyquintana@alumnos.cei.es</p>
+        </div>
+        <div class="contacto__container">
+            <h2>Contáctenos</h2>
+            <form action="" class="contacto__container__formulario">
+                <div class="contacto__container__formulario__content">
+                    <label for="nombre">Nombre</label>
+                    <input class="contacto__container__formulario__content__input input" placeholder="Escriba su nombre" required autocomplete="name" type="text" name="Nombre" id="nombre">
+                </div>
+                <div class="contacto__container__formulario__content">
+                    <label for="correo">Correo</label>
+                    <input class="contacto__container__formulario__content__input input" required autocomplete="email" placeholder="Escriba su correo electrónico" type="email" name="Correo electrónico" id="correo">
+                </div>
+                <select class="contacto__container__formulario__select input" required name="Pack de ejercicios" id="packs">
+                    <option selected disabled>Seleccione el pack de ejercicios</option>
+                    <option value="1">Aquacross</option>
+                    <option value="2">Aquadance</option>
+                    <option value="3">Natación</option>
+                    <option value="4">Fitcross</option>
+                    <option value="5">Yoga</option>
+                    <option value="6">Zumba</option>
+                </select>
+                <div class="contacto__container__formulario__content">
+                    <label for="descripcion">¿Qué necesita saber?</label>
+                    <input class="contacto__container__formulario__content__input input" required type="text" placeholder="Díganos sus dudas" name="Descripción" id="descripcion">
+                </div>
+                <div class="contacto__container__formulario__aceptacion">
+                    <input class="contacto__container__formulario__input" type="checkbox" required name="Aceptación de políticas" id="aceptacion">
+                    <label for="aceptacion">He leído y acepto la política de privacidad</label>
+                </div>
+                <input class="contacto__container__formulario__submit btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer"></footer>
+    
+</body>
+</html>
