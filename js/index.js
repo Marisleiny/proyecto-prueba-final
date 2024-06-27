@@ -32,7 +32,7 @@ prev.addEventListener('click', () => {
     counter --;
 })
 
-const iconHamburguesa = document.querySelector('.hamburguesa__a')
+const iconHamburguesa = document.querySelector('.hamburguesa')
 const popUp = document.querySelector('.overlay')
 const boton = document.popUp.querySelector('.overlay__button')
 

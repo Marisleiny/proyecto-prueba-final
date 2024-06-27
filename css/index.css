@@ -196,7 +196,6 @@ footer {
 .carrusel__container__content {
     width: 30vw;
     min-width: 200px;
-    height: 50vh;
 
     display: flex;
     flex-direction: column;
